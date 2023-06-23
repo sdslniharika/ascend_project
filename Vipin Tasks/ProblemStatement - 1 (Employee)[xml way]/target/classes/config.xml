@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config/>
+    <bean id="dtf" class="java.text.SimpleDateFormat">
+        <constructor-arg value="dd-mm-yyyy"></constructor-arg>
+    </bean>
+    <bean id="employee" class="org.globaltrainings.entity.Employee">
+        <property name="id" value="11"></property>
+        <property name="name" value="Kohli"></property>
+        <property name="salary" value="49999"></property>
+
+        <property name="dob">
+            <bean factory-bean="dtf" factory-method="parse">
+                <constructor-arg value="23-5-1989"></constructor-arg>
+            </bean>
+        </property>
+        <property name="doj">
+            <bean factory-bean="dtf" factory-method="parse">
+                <constructor-arg value="26-7-2021"></constructor-arg>
+            </bean>
+        </property>
+        <property name="address">
+            <bean id="address" class="org.globaltrainings.entity.Address">
+                <property name="houseNo" value="16/D3"></property>
+                <property name="street" value="India Gate"></property>
+                <property name="city" value="Delhi"></property>
+            </bean>
+        </property>
+
+    </bean>
+
+
+
+</beans>
