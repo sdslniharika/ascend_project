@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/duniamart/NotificationServicce/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/NotificationServicce/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/OrderService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/OrderService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/SellerService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/SellerService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/aggregator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/aggregator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/api-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/authentication-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/authentication-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/config-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/customerService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/customerService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/eureka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/feedback-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/feedback-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/paymentService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/paymentService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/searchService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/searchService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/duniamart/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

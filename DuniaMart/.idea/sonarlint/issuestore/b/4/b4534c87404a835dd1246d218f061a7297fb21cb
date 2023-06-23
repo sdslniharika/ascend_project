@@ -1,0 +1,16 @@
+
+t
+java:S2293U"YReplace the type specification in this constructor call with the diamond operator ("<>").(«Š´Ìıÿÿÿÿ
+t
+java:S2293g"YReplace the type specification in this constructor call with the diamond operator ("<>").(«Š´Ìıÿÿÿÿ
+t
+java:S2293y"YReplace the type specification in this constructor call with the diamond operator ("<>").(«Š´Ìıÿÿÿÿ
+i
+java:S1192L"SDefine a constant instead of duplicating this literal "Products Not Found" 4 times.(ş“úÓ
+o
+java:S1192@"TDefine a constant instead of duplicating this literal "Some Error Occurred" 5 times.(Â‰ÿ©úÿÿÿÿ
+}
+java:S1488:"bImmediately return this expression instead of assigning it to the temporary variable "productDTO".(Õ‡µÒüÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŠÇÔ
+Q
+java:S2696%"6Make the enclosing method "static" or remove this set.(ùÓ´áúÿÿÿÿ
