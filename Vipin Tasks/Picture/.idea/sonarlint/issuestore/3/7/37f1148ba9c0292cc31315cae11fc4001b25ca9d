@@ -1,0 +1,19 @@
+
+^
+java:S1192	"HDefine a constant instead of duplicating this literal "English" 6 times.(‰ìÉ´
+¨
+java:S1598"ŒThis file "Multiplex.java" should be located in "com/example/demo" directory, not in "/home/rutwik/Downloads/GL-Tasks/Day-13(JDBC)/Picture".(Éãµüüÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(äÃç
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÔÜ·
+S	java:S106""9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(‹ºˆùÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(øºÑûúÿÿÿÿ
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(½ÒÒìúÿÿÿÿ
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(şåóÇøÿÿÿÿ
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(¼Ç¢ôûÿÿÿÿ
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(€¯á
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(›ÄÜÿÿÿÿÿ8ĞğËğä0

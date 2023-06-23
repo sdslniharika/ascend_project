@@ -1,0 +1,26 @@
+Scripts
+
+drop database if exists movie_db;
+create database movie_db;
+use movie_db;
+
+
+create table movie (
+movieId varchar(6)
+primary key,
+movieName varchar(15) not null,
+language varchar(10) not null,
+releasedIn int not null,
+revenueInDollars bigint not null
+);
+
+
+INSERT INTO movie VALUES('M101', 'Home Alone', 'English', 1990, 476700);
+INSERT INTO movie VALUES('M102', 'Home Alone', 'English', 1992, 358900);
+INSERT INTO movie VALUES('M103','Transformers','English',2010, 16800);
+
+
+commit;
+
+
+select * from movie;

@@ -1,0 +1,32 @@
+aws ecr
+
+1) aws configure
+2)  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin  ecr_repoistory_uri
+3) docker tag sourcename targetname
+docker  tag  nginx:1.23   ecr_repoistory_uri
+docker push ecr_repoistory_uri
+
+
+
+ECS
+
+1) Create cluster- foreg of ec2 machines--instance type: t3-small
+
+2) Create task  
+ 
+ ram required
+ cpu required
+ Add container
+ container name
+ image: public docker image
+  docker.io/nginx:1.23
+  for your private ecr repository image
+  
+  port mapping of host port to container port
+  
+  
+ 3)run task on cluster 
+  
+ 4) verify running properly , public ip, public ec2 dns can be used 
+  
+

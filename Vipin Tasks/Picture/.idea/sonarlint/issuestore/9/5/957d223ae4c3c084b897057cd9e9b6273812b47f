@@ -1,0 +1,31 @@
+
+u
+java:S1488"_Immediately return this expression instead of assigning it to the temporary variable "changed".(î‹¡Ğ
+
+java:S1488T"_Immediately return this expression instead of assigning it to the temporary variable "changed".(»…¬Øüÿÿÿÿ8İ¤Âğä0
+³
+java:S1598"—This file "PreparedMovieManager.java" should be located in "com/example/demo" directory, not in "/home/rutwik/Downloads/GL-Tasks/Day-13(JDBC)/Picture".(Éãµüüÿÿÿÿ
+j
+java:S20951"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ø¢¦‘øÿÿÿÿ
+j
+java:S2095i"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Øº×àøÿÿÿÿ
+e
+java:S2095Q"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ƒ­‚Ì
+e
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(İ˜ëÑ
+<
+java:S1659"&Declare "password" on a separate line.(Û”ºŸ
+H
+java:S4925"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ
+L
+java:S2696"6Make the enclosing method "static" or remove this set.(şÃÏ§
+L
+java:S6437"6Revoke and change this password, as it is compromised.(şÃÏ§
+Z
+java:S2147"DCombine this catch with the one at line 29, which has the same body.(ıàÑÎ
+Z
+java:S2147@"DCombine this catch with the one at line 62, which has the same body.(ıàÑÎ
+Z
+java:S2147X"DCombine this catch with the one at line 86, which has the same body.(ıàÑÎ
+[
+java:S2147t"ECombine this catch with the one at line 114, which has the same body.(ıàÑÎ

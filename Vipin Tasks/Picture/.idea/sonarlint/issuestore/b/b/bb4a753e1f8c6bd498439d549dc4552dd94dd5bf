@@ -1,0 +1,31 @@
+
+u
+java:S1488"_Immediately return this expression instead of assigning it to the temporary variable "changed".(·ðÔ¥
+´
+java:S1598"˜This file "StatementMovieManager.java" should be located in "com/example/demo" directory, not in "/home/rutwik/Downloads/GL-Tasks/Day-13(JDBC)/Picture".(Éãµüüÿÿÿÿ
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµþÿÿÿÿ
+b
+java:S2095."GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµþÿÿÿÿ
+b
+java:S2095s"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµþÿÿÿÿ
+b
+java:S2095O"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµþÿÿÿÿ
+<
+java:S1659"&Declare "password" on a separate line.(Û”ºŸ
+H
+java:S4925"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ
+L
+java:S2696"6Make the enclosing method "static" or remove this set.(þÃÏ§
+L
+java:S6437"6Revoke and change this password, as it is compromised.(þÃÏ§
+Z
+java:S2147"DCombine this catch with the one at line 26, which has the same body.(ýàÑÎ
+Q	java:S125"<This block of commented-out lines of code should be removed.(€®”¬
+Z
+java:S2147>"DCombine this catch with the one at line 60, which has the same body.(ýàÑÎ
+Z
+java:S2147b"DCombine this catch with the one at line 96, which has the same body.(ýàÑÎ
+M	java:S106]"9Replace this use of System.out or System.err by a logger.(Ô–Ð~
+[
+java:S2147~"ECombine this catch with the one at line 124, which has the same body.(ýàÑÎ

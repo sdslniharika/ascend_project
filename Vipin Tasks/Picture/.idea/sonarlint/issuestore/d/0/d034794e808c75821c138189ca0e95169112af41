@@ -1,0 +1,23 @@
+
+¯
+java:S1598"“This file "MovieServiceImpl.java" should be located in "com/example/demo" directory, not in "/home/rutwik/Downloads/GL-Tasks/Day-13(JDBC)/Picture".(Éãµüüÿÿÿÿ
+Z
+java:S2147"DCombine this catch with the one at line 23, which has the same body.(”ı¾
+V	java:S125"<This block of commented-out lines of code should be removed.(µŸşíıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(·§¿“øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+Q	java:S125%"<This block of commented-out lines of code should be removed.(ñ¢‚â
+m
+java:S6204*"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(—âÕşÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(·§¿“øÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+Q	java:S125:"<This block of commented-out lines of code should be removed.(€³°¼
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(·§¿“øÿÿÿÿ
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+V	java:S125J"<This block of commented-out lines of code should be removed.(Èá‘ëşÿÿÿÿ
+K
+java:S1068
+"0Remove this unused "movieManager" private field.(ÀŒ÷Çüÿÿÿÿ
+S
+java:S1068"8Remove this unused "callableMovieManager" private field.(²ÅÅşÿÿÿÿ

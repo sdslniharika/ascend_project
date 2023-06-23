@@ -1,0 +1,128 @@
+//Postgres DBMS Task : 
+
+purchaseditems
+
+{
+id integer
+
+name charater varying -max size 20
+
+price -- precision 8, scale 3
+
+orderid-- char varying max 10 -fk id of createdorders
+
+}
+
+
+createdorders{
+
+id - char varying max 10
+
+createdby - integer  --fk id of customers
+
+
+
+}
+
+customers{
+id-- integer
+
+name- char varying 20
+
+}
+
+
+1) Fetch details of all items along with customer name when orderid is given
+
+2) fetch details of all customers who have not created any order
+
+3) fetch details of all orders along with customer details created by customer with id =2
+
+
+Solutions :
+-------------
+//Creating Customers Table
+create table customers(id int, name varchar(20));
+alter table customers add constraint cust_pk primary key(id);
+
+// Creating Orders Table
+create table orders(oid int, createdby int);
+alter table orders add constraint order_pk primary key(oid);
+alter table orders add constraint order_fk foreign key(createdby) references customers(id);
+alter table orders alter column oid type varchar(20);
+
+// Creating purchasedItems Table
+create table purchaseditems(id int, name varchar(20), price numeric(8,3), orderid varchar(20));
+alter table purchaseditems add constraint pitems_pk primary key(id);
+alter table purchaseditems add constraint pitems_fk foreign key(orderid) references orders(oid);
+
+//Insertion of entries in Customer Table
+insert into customers values(1, 'Virat');
+insert into customers values(2, 'kane');
+insert into customers values(3, 'Rohit');
+insert into customers values (4, 'Smith');
+insert into customers values(5, 'Warner');
+
+//Insertion of entries in Orders Table
+insert into orders values('Ord1', 4);
+insert into orders values('Ord2',4 );
+insert into orders values('Ord3', 1);
+insert into orders values('Ord4', 3);
+insert into orders values('Ord5', 2);
+
+//Insertion of entries in purchasedItems Table
+insert into purchaseditems values(1001, 'Motorola', 24000.876,'Ord3');
+insert into purchaseditems values (1002, 'OnePlus', 37000.7687687, 'Ord1');
+insert into purchaseditems values (1003, 'Apple', 99999.452, 'Ord2');
+
+//Displaying the rows of all the 3 tables
+select * from customers;
+ id |  name  
+----+--------
+  1 | Virat
+  2 | kane
+  3 | Rohit
+  4 | Smith
+  5 | Warner
+(5 rows)
+
+select * from orders;
+ oid  | createdby 
+------+-----------
+ Ord1 |         4
+ Ord2 |         4
+ Ord3 |         1
+ Ord4 |         3
+ Ord5 |         2
+(5 rows)
+
+select * from purchaseditems;
+  id  |   name   |   price   | orderid 
+------+----------+-----------+---------
+ 1001 | Motorola | 24000.876 | Ord3
+ 1002 | OnePlus  | 37000.769 | Ord1
+ 1003 | Apple    | 99999.452 | Ord2
+(3 rows)
+
+
+//Answer Queries  : 
+---------------------
+
+// 3rd One
+3) select * from orders o inner join customers c on o.createdby = c.id where c.id = 2;
+ oid  | createdby | id | name 
+------+-----------+----+------
+ Ord5 |         2 |  2 | kane
+(1 row)
+
+// 1st One
+1) select i.id, i.name, i.price, i.orderid, c.id, c.name from purchaseditems i inner join orders o on i.orderid = o.oid inner join customers c on o.createdby=c.id;
+  id  |   name   |   price   | orderid | id | name  
+------+----------+-----------+---------+----+-------
+ 1001 | Motorola | 24000.876 | Ord3    |  1 | Virat
+ 1002 | OnePlus  | 37000.769 | Ord1    |  4 | Smith
+ 1003 | Apple    | 99999.452 | Ord2    |  4 | Smith
+(3 rows)
+
+// 2nd One
+2) 
