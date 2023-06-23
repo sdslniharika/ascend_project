@@ -1,0 +1,103 @@
+server:
+  port: 8080
+
+jwt:
+  secretKey: secretkey
+
+spring:
+  profiles:
+    active: dev
+  main:
+    web-application-type: reactive
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path= /user-service/**
+          filters:
+            - RewritePath=/user-service/(?<segment>.*),/$\{segment}
+            - AuthenticationFilter
+
+        - id: authentication-service
+          uri: lb://AUTHENTICATION-SERVICE
+          predicates:
+            - Path= /authentication-service/**
+          filters:
+            - RewritePath=/authentication-service/(?<segment>.*),/$\{segment}
+            - AuthenticationFilter
+
+        - id: expert-service
+          uri: lb://EXPERT-SERVICE
+          predicates:
+            - Path= /expert-service/**
+          filters:
+            - RewritePath=/expert-service/(?<segment>.*),/$\{segment}
+            - AuthenticationFilter
+
+        - id: customer-service
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path= /customer-service/**
+          filters:
+            - RewritePath=/customer-service/(?<segment>.*),/$\{segment}
+            - AuthenticationFilter
+
+        - id: payment-service
+          uri: lb://PAYMENT-SERVICE
+          predicates:
+            - Path= /payment-service/**
+          filters:
+            - RewritePath=/payment-service/(?<segment>.*),/$\{segment}
+            - AuthenticationFilter
+
+        - id: email-service
+          uri: lb://EMAIL-SERVICE
+          predicates:
+            - Path= /email-service/**
+          filters:
+            - RewritePath=/email-service/(?<segment>.*),/$\{segment}
+            - AuthenticationFilter
+
+        - id: feedback-service
+          uri: lb://FEEDBACK-SERVICE
+          predicates:
+            - Path= /feedback-service/**
+          filters:
+            - RewritePath=/feedback-service/(?<segment>.*),/$\{segment}
+            - AuthenticationFilter
+
+        - id: openapi
+          uri: http://localhost:${server.port}
+          predicates:
+            - Path=/v3/api-docs/**
+          filters:
+            - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: user-service
+        url: /user-service/v3/api-docs
+      - name: authentication-service
+        url: /authentication-service/v3/api-docs
+      - name: expert-service
+        url: /expert-service/v3/api-docs
+      - name: customer-service
+        url: /customer-service/v3/api-docs
+      - name: payment-service
+        url: /payment-service/v3/api-docs
+      - name: email-service
+        url: /email-service/v3/api-docs
+      - name: feedback-service
+        url: /feedback-service/v3/api-docs
